@@ -1,0 +1,199 @@
+
+.title-name{
+  text-align: center;
+  background-color: rgba(0, 0, 0, .2);
+  color:white;
+  margin: 0;
+}
+.header{
+  position: fixed;
+  width: 100%;
+}
+.container{
+  position: relative;
+}
+.add-another-list{
+  padding: 6px 8px;
+  width: 220px;
+  background-color:rgba(0, 0, 0, .2);
+  height: 25px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+}
+.add-another-list:focus{
+  background-color: white;
+  border: 1px solid blue;
+}
+.add-another-list::placeholder{
+  color: white;
+  font-size: 16px;
+}
+.list{
+  display: flex;
+  margin-top: 50px;
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.card{
+ background-color: #fff;
+ padding: 6px 8px 2px;
+ border-radius: 5px;
+ margin: 10px 0;
+ border-bottom: 1px solid gray; 
+}
+.card:hover{
+  background-color:rgb(167, 240, 206);
+  cursor: pointer;
+}
+.card-name{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.list-items{
+  width: 270px;
+  background-color: #dfe3e6;
+  height: 100%;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.list-items-header{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.addnewcard{
+  border:none;
+  background-color:#dfe3e6;
+  padding: 8px;
+  text-decoration: none;
+  width:94%;
+  border-radius: 2px;
+}
+.addnewcard:focus{
+  background-color: white;
+  color:black
+}
+.addnewcard:focus:hover{
+  background-color: white;
+  color:black;
+}
+.addnewcard::placeholder{
+  font-size: 16px;
+}
+.addnewcard:hover{
+  background-color:#acaeaf;
+  color:white;
+  cursor: pointer;
+}
+.add-card-textbox{
+  display: hidden;
+}
+.badges{
+  background-color:#61bd4f;
+  border-radius: 3px;
+  padding: 2px;
+  color: #fff;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-family: monospace;
+}
+.badges img{
+  width:20px;
+  height: 20px;
+}
+
+.dialog-header{
+  display: flex;
+  margin: 0 10px;
+}
+.dialog-icons{
+  color:#798d99;
+  padding: 5px 10px 0 0;
+  cursor: pointer;
+}
+.dialog-title{
+  font-size: 20px;
+  font-weight: 700;
+}
+.selected-card-name{
+  display: inherit;
+  font-size: 12px;
+  color:#798d99;
+  margin: 10px 0;
+}
+.dialog-description-container{
+  margin: 10px;
+}
+.dialog-name{
+  font-size: 16px;
+  font-weight: 700;
+  margin:7px 0;
+}
+.description-content{
+  display: flex;
+  flex-direction: column;
+}
+.description-content textarea{
+  background-color: rgba(9,45,66,.08);
+  color:#6b808c;
+  border-radius: 3px;
+  padding: 7px 9px;
+  margin: 10px 0;
+}
+.description{
+  display: flex;
+}
+.check-list-container{
+  display: flex;
+}
+.add-comment-container{
+  display: flex;
+}
+.add-comment{
+  display: flex;
+  flex-direction: column;
+}
+.add-comment button{
+  width: 100px;
+  height: 40px;
+  background-color: #f5f6f7;
+    border: none;
+    color: #97a7b0;
+    cursor: pointer;
+}
+.activity-container{
+  display: flex
+}
+.check-list{
+  width:50%;
+}
+.check-items{
+  margin: 10px 0;
+  display: flex;
+}
+.check-items:hover{
+  background-color: #97a7b0
+}
+.check-items input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    background: #fafcfc;
+    border-radius: 3px;
+    text-align: center;
+}
+.check-list-items{
+  display: flex;
+  justify-content: space-between;
+}
+.addnewchecklist{
+  width: 30%;
+}
+.check:checked + span{
+   text-decoration:line-through
+ }
